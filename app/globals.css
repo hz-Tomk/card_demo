@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {}
-
-@media (prefers-color-scheme: dark) {
-  :root {}
-}
-
 body {
   background: #030303;
 }
@@ -15,10 +9,4 @@ body {
 .card_box:hover {
   left: 4px;
   bottom: 4px;
-}
-
-@layer utilities {
-  .text-balance {
-    /* text-wrap: balance; */
-  }
 }
