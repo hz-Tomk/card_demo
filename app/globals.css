@@ -17,62 +17,6 @@ body {
   bottom: 4px;
 }
 
-.g-filter {
-  /* background: radial-gradient(circle at left 70%, transparent 0, transparent 20px, #131313 20px, #131313); */
-  /* background内的颜色不生效且只显示原有色 */
-  background: radial-gradient(ellipse at left 72%, transparent 14px, #a87676 0) left, /* 左边的圆，circle表示圆形，可以换成其他形状ellipse表示椭圆/ */
-              radial-gradient(ellipse at right 72%, transparent 14px, rgb(19,19,19) 0) right;/* 右边的圆*/
-  background-repeat: no-repeat;
-  background-size: 50% 100%;
-}
-
-.g-filter1::before, 
-.g-filter1::after, 
-.g-filter2::before, 
-.g-filter2::after,
-.g-filter3::before, 
-.g-filter3::after {
-  position: absolute;
-  content: '';
-  height: 278px;
-  width: 208px;
-  z-index: -1;
-  top: 0;
-}
-
-.g-filter1::before {
-  left: 0; 
-  background-image: radial-gradient(
-    ellipse at -40px 186px, transparent 56px, #131313 11px, #131313 40px, #131313 40px
-  );
-}
-.g-filter1::after {
-  right: 0; 
-  background-image: radial-gradient(
-    ellipse at 248px 186px, transparent 56px, #131313 11px, #131313 40px, #131313 40px
-  );
-}
-
-.g-filter2::before {
-  left: 0; 
-  background-image: radial-gradient(
-    ellipse at -40px 86px, transparent 56px, #131313 11px, #131313 40px, #131313 40px
-  );
-}
-.g-filter2::after {
-  right: 0; 
-  background-image: radial-gradient(
-    ellipse at 248px 86px, transparent 56px, #131313 11px, #131313 40px, #131313 40px
-  );
-}
-
-.g-filter3 {
-  background: radial-gradient(circle at top right, transparent 156px, rgba(113, 54, 10, 1) 0);
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
-            padding: 8px;
-}
-
 @layer utilities {
   .text-balance {
     /* text-wrap: balance; */
