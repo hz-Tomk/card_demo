@@ -53,7 +53,7 @@ export default function Home() {
 
   return (
     <main className="relative w-[1600px] p-[110px] font-normal">
-      <div className="relative w-[1600px] border overflow-hidden">
+      <div className="relative w-[1600px] overflow-hidden">
         <div className="cards_scroll relative w-[1600px] overflow-hidden">
           <div className="flex w-[2054px] pl-[120px] pr-[70px] py-[100px]">
             {data.map((item) => {
